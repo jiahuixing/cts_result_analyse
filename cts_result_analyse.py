@@ -1,7 +1,7 @@
 __author__ = 'jiahuixing'
 # -*- coding: utf-8 -*-
 
-from xml.etree import ElementTree as ET
+from xml.etree import ElementTree
 
 
 def print_node(node):
@@ -24,7 +24,7 @@ def read_xml(text):
     """
     # 加载XML文件（2种方法,一是加载指定字符串，二是加载指定文件）
     # root = ElementTree.parse(r"D:/test.xml")
-    root = ET.fromstring(text)
+    root = ElementTree.fromstring(text)
 
     # 获取element的方法
     # 1 通过getiterator
